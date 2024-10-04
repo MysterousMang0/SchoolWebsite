@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #000000;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+ul, li {
+    
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    
+}
+
+#banner {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 50vh;             
+    text-align: center;
+    font-size: 3rem;   
+
+    font-family: Arial;
+    background-color: #a2a0a0b4;
+    color:  #a2a0a0b4; 
+    padding: 20px;
+    font-size: 25px;
+}
