@@ -1,7 +1,8 @@
-
 body {
     margin: 0;
     padding: 0;
+    background-color: darkcyan;
+    font-family: Arial;
 }
 
 
@@ -10,7 +11,7 @@ body {
  
     
     text-align: center;
-    color: #101010;
+    color: #000000;
     
     font-family: arial; 
     font-size: 100px;
@@ -19,7 +20,7 @@ body {
     left: 50%;
     height: 600px;
     transform: translate(-50%, -50%);
-}
+}s
 /*
 #introduction {
     display: flex;
@@ -48,28 +49,32 @@ body {
 }
 */
 
-body {
-    font-family: Arial;
-    margin: 0;
-    background-color: #f4f4f4;
-}
+
 
 h1, h2, h3 {
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 
 p {
     text-align: center;
     font-size: 25px;
+    font-family: arial;
 }
+
+    
 
 div {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+    background-color: #588157;
+}
+
+button:hover {
+    background-color: blue;
 }
 
 
