@@ -21,6 +21,7 @@ submitButton.addEventListener('click', function() {
         },
         body: JSON.stringify(data)  
     })
+    // handel th response
     .then(response => {
         if (response.ok) {
             document.getElementById('response').innerText = 'Message sent!';
