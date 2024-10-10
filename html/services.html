@@ -3,70 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../css/contact.css">
+    <title>Services</title>
+    <link rel="stylesheet" href="../css/services.css">
     <link rel="icon" href="https://www.sanctamaria.nl/runtime/images/49/16x16/sancta_rood_equilibrist.jpg" type="image/x-icon">
 </head>
 <body>
-    <div id="welcome">
-        <h3>
-            Hi welcome to our contact form here you can find all our contact information. You can also fill out the form at the bottom
-            of the page but please read the instructions carfully.
-        </h3>
+
+    <div>
+        <h3>Letter Counter</h3>
+        <textarea rows="25" cols="50" name="" id="TextArea"></textarea><br><br>
+        <button id="Check" >Check</button>
     </div>
-
-    <div id="contactInformation">
-        <p>
-            here you can find our contact information
-        </p>
-        <ul>
-            <li>E-mail: Torvic2021@outlook.com</li>
-            <li>Telephone number: +31 06 1234567890</li>
-            <li>Address: some street name</li>
-            <li>Location: The Netherlands, Europe</li>
-        </ul>
-    
-
-    
-        <p> 
-            When submiting a form please fill out the form in this format <br>
-            <ul>
-                <li>Name</li>
-                <li>E-mail</li>
-                <li>Telephone number</li>
-                <li>Location</li>
-                <li>Subject</li>
-            </ul>
-        </p>
-    
-
-   
-        <p>
-            so it shoud look something like this <br><br>
-
-            Torvic <br>
-            Torvic2021@outlook.com <br>
-            06 1234567890 <br>
-            The Netherlands <br>
-            message <br> <br>
-
-            Hello, im writing because i found an error on your website.
-
-
-        </p>
-    </div>
-    <!--
-    <form id="webhookForm"></form>
-        <label for="form">Your message:</label><br>
-        <textarea id="form" name="message" rows="5" cols="30" placeholder="Type your message here..."></textarea><br><br>
-        <button type="submit">Submit</button>
-    </form>
--->
-   <div>
-        <textarea rows="25" cols="50" name="" id="form"></textarea><br><br>
-        <button id="submit">submit</button>
-    </div>
-    <div id="response"></div>
+    <div id="answer"></div>
 
     <nav id="banner" class="banner">
         <ul>
@@ -76,8 +24,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-   
-    <script src="../contact.js"></script>
 
+    <script src="../wordCounter.js"></script>
 </body>
 </html>
