@@ -3,7 +3,10 @@ window.onload = function() {
     // declare the setCookie function
     function setCookie(name) {
         let id = Math.random()
-        document.cookie = name + "=" + id
+        id = id * 10000000000000000
+        const date = new Date("December, 30, 2025 1:15:00")
+        let expires = "expires=" + date
+        document.cookie = name + "=" + id + ";" + expires;
         console.log("the cookie was set")
     };
 
@@ -53,6 +56,3 @@ window.onload = function() {
        
         
 }
-
-    
-
