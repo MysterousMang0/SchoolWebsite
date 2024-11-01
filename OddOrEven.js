@@ -5,11 +5,11 @@ const answerOddOrEven = document.getElementById("OddOrEvenAnswer")
 button.addEventListener("click", function() {
     var text = textAreaOddOrEven.value
     
-    if (!isInteger(text)){
+    if (!text){
 
         answerOddOrEven.innerHTML = "Please enter a Valid number"
     }
-    if (isInteger(text)) {
+    if (text) {
         c = text % 2
         if (c === 1) {
             answerOddOrEven.innerHTML = "Your number is ODD"
