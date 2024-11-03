@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: darkcyan;
+    background-color:#fafaee;
     font-family: Arial;
 }
 
@@ -16,11 +16,9 @@ p {
 }
 
 div {
-    max-width: 1200px;
+
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
-    background-color: #588157;
 
 }
 
@@ -31,6 +29,12 @@ ul, li {
     text-align: center;
     
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 
 button {
     width: 100px;
@@ -63,8 +67,8 @@ textarea:hover {
     font-size: 3rem;   
 
     font-family: Arial;
-    background-color: #a2a0a0b4;
-    color:  #a2a0a0b4; 
+    background-color: #000000e2;
+    color:  #000000e2; 
     padding: 20px;
     font-size: 25px;
 }
