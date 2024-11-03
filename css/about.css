@@ -14,11 +14,28 @@ p {
     font-size: 25px;
 }
 
+#cssheader {
+    text-align: center;
+    font-size: small;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
 div {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 ul, li {
