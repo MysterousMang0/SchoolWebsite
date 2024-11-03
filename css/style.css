@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: darkcyan;
+    background-color:#fafaee;
     font-family: Arial;
+    
 }
 
 
@@ -11,7 +12,7 @@ body {
  
     
     text-align: center;
-    color: #000000;
+    color: wheat;
     
     font-family: arial; 
     font-size: 100px;
@@ -56,27 +57,51 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 p {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: arial;
 }
 
+.box {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(54, 54, 240);
+    border-radius: 20px;
+}
+
+#theSecondTextThing {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+#boxBeluga {
+    max-width: 600px;
+    height: 400px;
     
+}
 
 div {
-    max-width: 1200px;
+  
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
-    background-color: #588157;
+   
+    background-color: #fafaee ;
 }
 
 button:hover {
     background-color: blue;
 }
-
+ 
+#a320neo {
+    max-width: 1200px;
+}
 
 #banner {
     display: flex;
@@ -87,8 +112,8 @@ button:hover {
     font-size: 3rem;   
 
     font-family: Arial;
-    background-color: #a2a0a0b4;
-    color:  #a2a0a0b4; 
+    background-color: #000000e2;
+    color:  #000000e2; 
     padding: 20px;
     font-size: 25px;
 }
