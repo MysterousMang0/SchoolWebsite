@@ -1,61 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: darkcyan;
+    background-color:#fafaee;
     font-family: Arial;
 }
 
-
-#welcome {
-   
- 
-    
+ h2, h3 {
     text-align: center;
     color: #000000;
-    
-    font-family: arial; 
+}
+
+h1 {
     font-size: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 600px;
-    transform: translate(-50%, -50%);
-}s
-/*
-#introduction {
-    display: flex;
-    justify-content: center;   
-    align-items: center;       
-    height: 50vh;             
     text-align: center;
-    font-size: 3rem;   
-
-    font-family: Arial;
-    background-color: #11849bb0;
-    color: #000000; 
-    padding: 20px;
-    font-size: 30px;
 }
-
-#theSecondTextThing {
-    display: flex;
-    justify-content: center;   
-    align-items: center;       
-    height:S 100vh;             
-    text-align: center;
-    font-size: 3rem;    
-    font-family: arial;
-    
-}
-*/
-
-
-
-h1, h2, h3 {
-    text-align: center;
-    color: #000000;
-}
-
 
 p {
     text-align: center;
@@ -63,14 +21,28 @@ p {
     font-family: arial;
 }
 
-    
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textboxdiv {
+    align-items: center;
+}    
 
 div {
-    max-width: 1200px;
+    
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
-    background-color: #588157;
+    
+    align-items: center;
 }
 
 button {
@@ -84,9 +56,22 @@ button:hover {
     lighting-color: white;
 }
 
-textarea {
-    background-color: darkgray;
+button:disabled {
+    cursor: not-allowed;
 }
+
+textarea {
+    /*width: 100px;*/
+     transition-duration: 0.4s;
+ }
+ 
+ textarea:hover {
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     background-color: lightgray;
+     lighting-color: white;
+ }
+
+
 
 #banner {
     display: flex;
@@ -97,8 +82,8 @@ textarea {
     font-size: 3rem;   
 
     font-family: Arial;
-    background-color: #a2a0a0b4;
-    color:  #a2a0a0b4; 
+    background-color: #000000e2;
+    color:  #000000e2; 
     padding: 20px;
     font-size: 25px;
 }
