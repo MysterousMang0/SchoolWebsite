@@ -26,33 +26,59 @@ window.onload = function() {
         return "";
       }
 
+      
 
       let cookie = getCookie("_COOKIE")
+  
+      
 
       if (cookie === ""){
-        let Cookies = localStorage.getItem("Cookies")
+        //let aprove = false
+        //let Cookies = localStorage.getItem("Cookies")
         // get the aprovel of the user
-        let aprove = prompt("Do you consent to cookies? type yes if you do so.")
-        // check if the usere aproves
-        if (aprove && aprove.toLowerCase() === "yes") {
-            setCookie("_COOKIE")
-            alert("You agreed to set a cookie :)")
-            localStorage.setItem("Cookies", "true")
-            console.log("the item was set")
-            
-        } 
-        if (aprove && aprove.toLowerCase() !== "yes") {
-            alert("You did not agree to cookies :(")
-            window.location.href = "error.html"
-            localStorage.setItem("Cookies", "false")
-        }
-      }
+        
+        const div = document.createElement("div")
+        div.id = "cookieDiv"
+        div.innerHTML = `<p>we use cookies. do you aprove?</p>
+        <button id="yes">Accept</button> <br>
+        <button id="no">No</button>`
 
+        document.body.appendChild(div)
+        
+        document.getElementById("yes").addEventListener("click", function(){
+          div.remove()
+          setCookie("_COOKIE")
+          alert("You agreed to set a cookie :)")
+          localStorage.setItem("Cookies", "true")
+          console.log("the item was set")
+          
+        }) 
+        
+        document.getElementById("no").addEventListener("click", function(){
+          div.remove
+          alert("You did not agree to cookies :(")
+          window.location.href = "error.html"
+          localStorage.setItem("Cookies", "false")
+          
+        })
+      
+        // check if the usere aproves
+      }
       if (cookie !== "") {
         return 0
       }
+    
 
 
-       
+
+
+
+
+
+
         
 }
+
+    
+
+
