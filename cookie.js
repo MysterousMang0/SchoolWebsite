@@ -66,19 +66,15 @@ window.onload = function() {
       }
       if (cookie !== "") {
         return 0
-      }
-    
-
-
-
-
-
-
-
-
-        
+      } 
 }
 
-    
+function sendToService() {
+  window.location.href = "services.html"
+}
+
+function sendToLogin() {
+  window.location.href = "login.html"
+}
 
 
