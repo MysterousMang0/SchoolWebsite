@@ -13,6 +13,20 @@ submitButton.addEventListener('click', function() {
         content: message
     };
 
+    
+     let badwords = ["nigger", "kanker", "fack", "kut", "godverdommmen", "neuken", "mannen", "kloten", "sex", "gay", "porno",
+        "bosnegger", "neger", "negerzoenen", "kankerzooi", "fuck", "pansexueel", "homo", "lesbo", "bosnicht", "mother fucker",
+         "lul", "eikel", "hoer", "trut", "kutwijf", "aso", "bitch", "slet", "doos", "sukkel", "mongool",]
+
+    let found = badwords.some(word => message.includes(word))
+
+    
+
+    if (found) {
+        window.location.href = "error.html"
+    } else {
+        console.log("no bad word found")
+    }
  // send the data to the webhook
     fetch(url, {
         method: 'POST',
