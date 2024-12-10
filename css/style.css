@@ -7,8 +7,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .introduction {
@@ -241,4 +241,12 @@ button:hover {
 }
 #cookieDiv button:hover {
     background-color: #0056b3;
+}
+
+#download {
+    color: black;
+}
+
+#infoElement {
+    color: black;
 }
