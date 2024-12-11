@@ -43,10 +43,14 @@ ul, li {
     padding: 5px;
     position: relative;
     text-align: center;
-    
+    text-decoration: none;
 }
 button:hover {
     background-color: blue;
+}
+
+#source_code a{
+    color: black;
 }
 #banner {
     display: flex;
@@ -62,4 +66,3 @@ button:hover {
     padding: 20px;
     font-size: 25px;
 }
-
