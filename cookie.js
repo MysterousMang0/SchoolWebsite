@@ -68,6 +68,15 @@ window.onload = function() {
     if (cookie !== "") {
       return 0
     } 
+
+  document.addEventListener("DOMContentLoaded", function() {
+        fetch("https://api.ipify.org?format=json")
+        .then(response => response.json())
+        .then(data => {
+          console.log(data)
+        })
+        .catch(error => console.error(error))
+    });
 }
 
 function sendToService() {
