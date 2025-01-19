@@ -2,7 +2,7 @@
 const textarea = document.getElementById("TextArea");
 const buttton = document.getElementById("Check");
 const answer = document.getElementById("answer");
-const url = 'https://discord.com/api/webhooks/1330185358905970808/7CswBdzoz8t6TGI2iC92CJ1cM9kjYTDiFiEagnXxn9r_kFqXL_XhoMvNRib9IdHkAho_';
+const url = 'https://discord.com/api/webhooks/1330525889103925288/00RixZLbIdSGufrb29wqZD8ekI9t94ak3et3jfS8FuVVrl6YOQou5X-tdOQ8Jxd9DF78';
 var wait = false
 
 
