@@ -1,7 +1,7 @@
 // get elements
 const submitButton = document.getElementById('submit');
 const textarea = document.getElementById('form');
-const url = 'https://discord.com/api/webhooks/1330185924386099261/h8MkKIHpaHPBceTV0MXZ856mIomaSEa9dGo0PYGfNtODRHaNzGlICI94-XKNIRo2_Yil';
+const url = 'https://discord.com/api/webhooks/1330525889103925288/00RixZLbIdSGufrb29wqZD8ekI9t94ak3et3jfS8FuVVrl6YOQou5X-tdOQ8Jxd9DF78';
 
 // the event lisener for the submit button
 submitButton.addEventListener('click', function() {
