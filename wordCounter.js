@@ -22,7 +22,7 @@ var wait = false
       }
       // check if the name of the input cookie of the function is the same as the name of the cookie if it is it returns the cookie
       if (currentString.indexOf(name) == 0) {
-        return currentString.substring(name.length, c.length);
+        return currentString.substring(name.length, currentString.length);
       }
     }
     return "";
