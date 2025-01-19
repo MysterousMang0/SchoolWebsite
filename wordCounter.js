@@ -21,8 +21,8 @@ var wait = false
         currentString = currentString.substring(1);
       }
       // check if the name of the input cookie of the function is the same as the name of the cookie if it is it returns the cookie
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
+      if (currentString.indexOf(name) == 0) {
+        return currentString.substring(name.length, c.length);
       }
     }
     return "";
