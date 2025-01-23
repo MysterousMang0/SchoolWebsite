@@ -1,17 +1,23 @@
-// get elements
 const submitButton = document.getElementById('submit');
 const textarea = document.getElementById('form');
 
 async function getUrl() {
     try {
-        const response = await fetch("https://worker-hello.torvic2021.workers.dev/webhook")
-        if (!response.ok) {
-            console.error("failed to fetch")
-        }
+        const response = await fetch("https://worker-hello.torvic2021.workers.dev/webhook", {
+            
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: "hi form web",
+            })  
+            
+        })
         const data = await response.json()
         console.log(data)
         console.log(response)
-        return data
+        return data.webhook
     } catch(error) {
         console.error(error)
     }
@@ -19,11 +25,11 @@ async function getUrl() {
 
 
 // the event lisener for the submit button
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', async function() {
 
     
     
-    const url = getUrl()    
+    const url = await getUrl()    
     
     var message = textarea.value
 
@@ -68,6 +74,3 @@ submitButton.addEventListener('click', function() {
     }
     
 })
-
- 
-
