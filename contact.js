@@ -1,16 +1,35 @@
 // get elements
 const submitButton = document.getElementById('submit');
 const textarea = document.getElementById('form');
-const url = 'https://discord.com/api/webhooks/1330525889103925288/00RixZLbIdSGufrb29wqZD8ekI9t94ak3et3jfS8FuVVrl6YOQou5X-tdOQ8Jxd9DF78';
+
+async function getUrl() {
+    try {
+        const response = await fetch("https://worker-hello.torvic2021.workers.dev/webhook")
+        if (!response.ok) {
+            console.error("failed to fetch")
+        }
+        const data = await response.json()
+        console.log(data)
+        console.log(response)
+        return data
+    } catch(error) {
+        console.error(error)
+    }
+}
+
 
 // the event lisener for the submit button
 submitButton.addEventListener('click', function() {
+
+    
+    
+    const url = getUrl()    
     
     var message = textarea.value
 
     // check bad words
     // you better skip this part im not proud of it
-    let badwords = ["nigger", "kanker", "fack", "kut", "godverdommmen", "neuken", "mannen", "kloten", "sex", "gay", "porno",
+    let badwords = ["nigger", "kanker", "fack","fuck" , "kut", "godverdommmen", "neuken", "mannen", "kloten", "sex", "gay", "porno",
         "bosnegger", "neger", "negerzoenen", "kankerzooi", "fuck", "pansexueel", "homo", "lesbo", "bosnicht", "mother fucker",
          "lul", "eikel", "hoer", "trut", "kutwijf", "aso", "bitch", "slet", "kanker mongool", "sukkel", "mongool",]
 
@@ -26,7 +45,7 @@ submitButton.addEventListener('click', function() {
         const data = {
             content: message
         }
-
+        // send the data to the discord webhook
         fetch(url, {
             method: 'POST',
             headers: {
