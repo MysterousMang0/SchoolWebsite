@@ -34,7 +34,7 @@
             console.log("Error: ", error)
         })
 
-        fetch("https://worker-hello.torvic2021.workers.dev/api/login")
+        fetch("https://worker-hello.torvic2021.workers.dev/api/inlog")
           .then((res) => res.json())
           .then((data) => {
             console.log("Posts:", data.results);
