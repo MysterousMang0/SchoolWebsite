@@ -33,6 +33,13 @@
         .catch(error => {
             console.log("Error: ", error)
         })
+
+        fetch("https://worker-hello.your-subdomain.workers.dev/api/posts")
+          .then((res) => res.json())
+          .then((data) => {
+            console.log("Posts:", data.results);
+          });
+
         
         
     })
